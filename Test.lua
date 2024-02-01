@@ -1,39 +1,39 @@
 getgenv().Valox = {
     ['Options'] = {
-        Key = "LuaArmorKeyHere", -- lua armor key
-        Intro = true,            -- small intro
-        ['UnlockFps'] = {
+        Key = 'keyhere',        -- [ replace [keyhere] with your key ]
+        Intro = true, -- Done
+        ['UnlockFps'] = { -- Done
             Enabled = true,
             FpsCap = 999,
         },
     },
-    ['Main'] = {                -- Triggerbot lol
-        ['Basic'] = {
-            Enabled = true,     -- Enables Valox
-            Alert = true,       -- alerts once enabled and disabled
-            Use_KeyBind = true, -- Toggle bind choice
+    ['Main'] = {
+        ['Basic'] = { -- Done
+            Enabled = true,
+            Alert = true,
+            Use_KeyBind = true,
         },
-        ['Customization'] = {
-            Predict = true,   -- Predict
-            Prediction = 0.12327, -- Prediction amount
-            Interval = 0.5,   -- Interval / reaction time
-            Accurate = true,  -- Enables the choice for accuracy
-            Accuracy = 100,   -- Accurscy
+        ['Customization'] = { -- 2 Things Done
+            Predict = true, -- Not Done
+            Prediction = 0.12327, -- Not Done
+            Enable_Interval = true, -- Done
+            Interval = 0.5, -- Done
+            Accurate = true, -- Not Done
+            Accuracy = 100, -- Not Done
         },
-        ['Safety'] = {
-            Mode = "KeyBind", -- KeyBind or Hold
-            Bind = "U",
+        ['Safety'] = { -- 1 Thing Done
+            Bind = "U", -- Done
         },
     },
-    ['Drawing'] = { -- Drawing FOV
+    ['Drawing'] = { -- Not Done
         ['TriggerBot'] = {
-            Visible = true, -- Visibility
-            Size = 35, -- Size
-            Use_Fov = false, -- Use Size for triggerbot
-            Color = Color3.fromRGB(255, 255, 255),
+            Visible = true, -- Not Done
+            Size = 35, -- Not Done
+            Use_Fov = false, -- Not Done
+            Color = Color3.fromRGB(255, 255, 255), -- Not Done
         },
-        ['AimAssist'] = {
-            Visible = true, -- circle visible
+        ['AimAssist'] = { -- Not Done At All
+            Visible = true,
             Use_Fov = false,
             Filled = false,
             Size = 21,
@@ -44,13 +44,13 @@ getgenv().Valox = {
             Color = Color3.fromRGB(0, 0, 0),
         }
     },
-    ['AimAssist'] = {
+    ['AimAssist'] = { -- Not Done at all
         Enabled = true,
-        Mode = "Bind", -- Bind or Hold
-        Prediction = 0.1429, -- Prediction
-        SmoothValue = 0.043, -- Value of smooth
-        Bone = "Head", -- Head, UpperTorso, HumanoidRootPart, LowerTorso
-        NearestCursorHitpart = true, -- Nearest Point
+        KeyBind = "C",
+        Prediction = 0.1429,
+        SmoothValue = 0.043,
+        Bone = "Head",
+        NearestCursorHitpart = true,
         ['EasingStyle'] = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
             First = 'Elastic',
             Second = 'Sine',
