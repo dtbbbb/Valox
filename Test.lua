@@ -63,3 +63,5 @@ getgenv().Valox = {
         },
     },
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/listofmyregrets/Valox/main/Loader.lua"))()
